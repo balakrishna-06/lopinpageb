@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "email": "balakrishnabalagonda@gmail.com",
+      "password": "Bala@123",
+      "username": "Balakrishna"
+    },
+    {
+      "email": "janagonda.rajendrababu3@gmail.com",
+      "password": "Jana@123",
+      "username": "Janagonda"
+    }
+  ],
+  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "profile": { "name": "typicode" }
+}
