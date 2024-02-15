@@ -1,8 +1,10 @@
-import React, {  useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUser } from "./Actions";
 import { useNavigate } from "react-router-dom";
+import backgroundIMG from "./Images/nature.jpg";
+
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,8 +21,8 @@ export default function LoginPage() {
   }
 
   return (
-    <div>
-      <div className="card mb-3">
+    <div >
+      <div className="card mb-3" >
         <div className="row g-0 d-flex align-items-center">
           <div className="col-lg-4 d-none d-lg-flex">
             <img
@@ -55,7 +57,7 @@ export default function LoginPage() {
               </div>
               {error && <p style={{ color: "red" }}>{error}</p>}
               <button onClick={handleLogin}>Login</button>
-              {isLoggedIn && <p>Login successful!</p>}{" "}
+              {isLoggedIn && <p></p>}{" "}
             </div>
           </div>
         </div>

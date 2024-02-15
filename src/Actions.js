@@ -1,6 +1,10 @@
 export const LOGIN_REQUEST = "LOGIN_REQUEST";
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const LOGIN_FAILURE = "LOGIN_FAILURE";
+export const LOGOUT = "LOGOUT";
+export const SIGNUP_REQUEST = "SIGNUP_REQUEST";
+export const SIGNUP_SUCCESS = "SIGNUP_SUCCESS";
+export const SIGNUP_FAILURE = "SIGNUP_FAILURE";
 
 export const loginRequest = () => ({
   type: LOGIN_REQUEST,
@@ -15,18 +19,31 @@ export const loginFailure = (error) => ({
   type: LOGIN_FAILURE,
   payload: error,
 });
+export const logout = () => ({
+  type: LOGOUT,
+});
+
+export const signupRequest = () => ({
+  type: SIGNUP_REQUEST,
+});
+
+export const signupSuccess = () => ({
+  type: SIGNUP_SUCCESS,
+});
+
+export const signupFailure = (error) => ({
+  type: SIGNUP_FAILURE,
+  payload: error,
+});
 
 export const loginUser = (email, password) => {
   return async (dispatch) => {
     dispatch(loginRequest());
 
     try {
-      // Simulate fetching user data from local JSON file
       const response = await fetch("http://localhost:3001/users");
       const data = await response.json();
       const users = data;
-
-      // Check if the credentials match any user in the JSON data
       const user = users.find(
         (u) => u.email === email && u.password === password
       );
@@ -38,6 +55,32 @@ export const loginUser = (email, password) => {
       }
     } catch (error) {
       dispatch(loginFailure("An error occurred. Please try again later."));
+    }
+  };
+};
+
+export const signupUser = (userData) => {
+  return async (dispatch) => {
+    dispatch(signupRequest());
+
+    try {
+      // Perform your signup API call here
+      const response = await fetch("http://localhost:3001/users", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to signup");
+      }
+
+      // Assuming the server returns a success response upon successful signup
+      dispatch(signupSuccess());
+    } catch (error) {
+      dispatch(signupFailure("Failed to signup. Please try again later."));
     }
   };
 };

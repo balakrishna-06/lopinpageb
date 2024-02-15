@@ -3,14 +3,108 @@
     {
       "email": "balakrishnabalagonda@gmail.com",
       "password": "Bala@123",
-      "username": "Balakrishna"
+      "username": "Balakrishna",
+      "id": "c20e"
     },
     {
       "email": "janagonda.rajendrababu3@gmail.com",
       "password": "Jana@123",
-      "username": "Janagonda"
+      "username": "Janagonda",
+      "id": "b2f6"
+    },
+    {
+      "email": "pasupulabhaskar90@gmail.com",
+      "password": "Bhaskar@123",
+      "username": "Pasupula",
+      "id": "7935"
+    },
+    {
+      "id": "2fc4",
+      "username": "rajendra",
+      "password": "Janagonda@123",
+      "email": "jana.babu6302@gmail.com"
+    },
+    {
+      "id": "dd09",
+      "username": "babu",
+      "password": "Janagonda@8919",
+      "email": "janagonda.rajendrababu3@gmail.com"
+    },
+    {
+      "id": "8900",
+      "username": "chiranjeevi",
+      "password": "Salla@123",
+      "email": "sallachiranjeevi90@gmail.com"
+    },
+    {
+      "id": "e5ef",
+      "username": "chiranjeevi",
+      "password": "Najsnk@123",
+      "email": "janagonda.rajendrababu3@gmail.com"
+    },
+    {
+      "id": "c2f9",
+      "username": "hjh",
+      "password": "yeugedg",
+      "email": "jana.babu6302@gmail.com"
+    },
+    {
+      "id": "9b5c",
+      "username": "babu",
+      "password": "hbjww",
+      "email": "jana.babu6302@gmail.com"
+    },
+    {
+      "id": "70cb",
+      "username": "chiranjeevi",
+      "password": "bsjk2kw",
+      "email": "jana.babu6302@gmail.com"
+    },
+    {
+      "id": "267d",
+      "username": "mahesh",
+      "password": "Mahesh@123",
+      "email": "byallamahesh@gmail.com"
+    },
+    {
+      "id": "071d",
+      "username": "manohar",
+      "password": "Manohar@123",
+      "email": "manohar@gmail.com"
+    },
+    {
+      "id": "8b82",
+      "username": "madhu",
+      "password": "Madhu@123",
+      "email": "kuruvamadhu@gmail.com"
+    },
+    {
+      "id": "9537",
+      "username": "Janagonda",
+      "password": "Sucharitha@123",
+      "email": "janagondarajendrababu9@gmail.com"
+    },
+    {
+      "id": "62bf",
+      "username": "Janagonda",
+      "password": "vxhbwjdgj",
+      "email": "jana.babu6302@gmail.com"
+    },
+    {
+      "id": "9d77",
+      "username": "madhu",
+      "password": "Madhu@123",
+      "email": "madhukuruva@gmail.com"
     }
   ],
-  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
-  "profile": { "name": "typicode" }
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
