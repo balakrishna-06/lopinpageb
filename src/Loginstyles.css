@@ -1,0 +1,38 @@
+.contanier {
+  height: 100vh;
+  width: 100% !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.w-50 {
+  width: 30% !important;
+  top:60px;
+  background-image: url("C:\Users\Dell\Desktop\Form Validation\project\src\Images\nature.jpg");
+  position: absolute !important;
+  /* background-repeat: no-repeat; */
+  /* top: 120px; */
+  border: 2px solid cadetblue !important;
+  border-radius: 10px;
+  left: 35%;
+  overflow: auto;
+  margin-top: 0px;
+}
+
+.form-label {
+  font-weight: 700;
+}
+
+.btn-success {
+  background-color: black !important;
+  border: none !important;
+  width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .w-50 {
+    width: 100% !important;
+    left: 0 !important;
+  }
+}
